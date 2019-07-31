@@ -5,6 +5,22 @@
         </ion-title>
     </ion-toolbar>
 </ion-header>
-<ion-content padding>
-
+<ion-content>
+    <ion-slides autoplay="5000" loop="true" speed="3000">
+        <ion-slide *ngFor="let image of imageArray">
+                <!-- <img src="{{image.image}}" height="550" width="870*"/> -->
+                <ion-card>
+                        <ion-card-header >
+                                <img src="{{image.image}}" height="333" width="500*"/>
+                          <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                          <ion-card-title>Card Title</ion-card-title> -->
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Keep close to Nature's heart... and break clear away, once in awhile,
+                          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                        </ion-card-content>
+                      </ion-card>
+        </ion-slide>
+    </ion-slides>
 </ion-content>
