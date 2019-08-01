@@ -1,0 +1,15 @@
+ion-content {
+    --background: url('https://images.pexels.com/photos/333523/pexels-photo-333523.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center/cover fixed;
+    --background-size: fill;
+}
+ div{
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ p{
+     color: white;
+     text-decoration: aqua;
+     text-align: right;
+     position: sticky;
+ }

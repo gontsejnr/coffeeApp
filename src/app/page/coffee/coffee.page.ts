@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./coffee.page.scss'],
 })
 export class CoffeePage implements OnInit {
+
+  // @ViewChild(Slides) slides: Slides;
+
 
   imageArray: any = [];
 
@@ -27,6 +30,8 @@ export class CoffeePage implements OnInit {
    }
   ngOnInit() {
   }
-
+ order(){
+   this.router.navigateByUrl('order');
+ }
 
 }

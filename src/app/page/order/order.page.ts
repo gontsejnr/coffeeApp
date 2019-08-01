@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class OrderPage implements OnInit {
 
-  coffeeType : string [] = ['Rooibos', 'Classic Chai', 'Red Espresso', 'Red Cappuccino', 'Serious Red Cappuccino', 'Red Latte', 'Decadent Latte', 'Caffe Mocha: Classic', 'Caffe Mocha: Caribbean']
+  coffeeType : string [] = ['Brewed Coffee', 'Cappuccino', 'Green Tea Latte', 'Espresso', 'Hot Chocolate', 'Chai Tea Latte']
   prices : number [] = [22, 33, 20, 34, 33, 32, 43, 34, 40]
   addOn: string [] = ['Milk', 'Cream', 'Chocolate', 'Honey']
   aPrice: number [] = [11, 8, 9, 9]
@@ -119,7 +119,7 @@ export class OrderPage implements OnInit {
     }
   }
 
-  // Cost(){
-  //   this.total = this.payment + this.paymentE;
-  // }
+ Pic(){
+   this.router.navigateByUrl('confirm');
+ }
 }

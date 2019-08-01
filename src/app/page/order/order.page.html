@@ -1,15 +1,12 @@
 <ion-header>
-    <ion-toolbar>
-        <ion-title>order</ion-title>
+    <ion-toolbar color="dark">
+        <ion-title>ORDER</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <!-- <p>{{coffeeType[0]}}</p>
-<br>
-<p>R{{prices[0]}}</p> -->
 
-    <ion-list>
+    <!-- <ion-list>
         <ion-radio-group [(ngModel)]="radioB">
             <ion-list-header>
                 <ion-label>Hot Berv</ion-label>
@@ -57,7 +54,71 @@
         </ion-radio-group>
     </ion-list>
 
-
-    <p>Payment: R{{payment}} + R{{paymentE}}</p><br>
+<div color="light">
+    <p>Payment: R{{payment}} + R{{paymentE}}</p><br> -->
+    <!-- <br>
     <p>Total Cost: R{{total}}</p>
+</div> -->
+    <!-- <ion-card color="light">
+            <ion-card-header>
+              <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/brewed_coffee.jpg" />            
+            </ion-card-header>
+          
+            <ion-card-content>
+                    <ion-grid>
+                            <ion-row>
+                              <ion-col>
+                                <div><ion-button color="light"><b>+</b></ion-button>
+
+                                    <ion-label>0</ion-label>
+            
+                                    <ion-button color="light"><b>-</b></ion-button>  </div>
+                                <div><ion-button color="light"><b>+</b></ion-button>
+
+                                    <ion-label>0</ion-label>
+            
+                                    <ion-button color="light"><b>-</b></ion-button></div>
+                              </ion-col>
+                              
+                              <ion-col>
+                                <div> <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/brewed_coffee.jpg" /><br>{{coffeeType[0]}}<br>Price: R{{prices[0]}}.00</div>
+                              </ion-col>
+                            </ion-row>
+                            </ion-grid>
+
+            </ion-card-content>
+          </ion-card> -->
+<ion-card color="dark">
+    <ion-card-content >
+        
+            <ion-grid color="dark">
+                    <ion-row>
+                            <ion-col>
+                              <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/brewed_coffee.jpg" (click)="Pic()"><br><b>{{coffeeType[0]}}</b><br><i><small>starts at: R{{prices[0]}}.00</small></i></div>
+                            </ion-col>
+                            <ion-col>
+                              <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/240x240/_files/Beverages/SBX20080807_3256_1.jpg" (click)="Pic()"/><br><b>{{coffeeType[1]}}</b><br><i><small>starts at: R{{prices[1]}}.00</small></i></div>
+                            </ion-col>
+                          </ion-row>
+                          <ion-row>
+                                <ion-col>
+                                  <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/green_tea_latte.jpg" (click)="Pic()"/><br><b>{{coffeeType[2]}}</b><br><i><small>starts at: R{{prices[2]}}.00</small></i></div>
+                                </ion-col>
+                                <ion-col>
+                                  <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/espresso_shot.jpg" (click)="Pic()"/><br><b>{{coffeeType[3]}}</b><br><i><small>starts at: R{{prices[3]}}.00</small></i></div>
+                                </ion-col>
+                              </ion-row>
+                              <ion-row>
+                                    <ion-col>
+                                      <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/white_hot_chocolate.jpg" (click)="Pic()"/><br><b>{{coffeeType[4]}}</b><br><i><small>starts at: R{{prices[4]}}.00</small></i></div>
+                                    </ion-col>
+                                    <ion-col>
+                                      <div><img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/chat_tea_latte.jpg" (click)="Pic()"/><br><b>{{coffeeType[5]}}</b><br><i><small>starts at: R{{prices[5]}}.00</small></i></div>
+                                    </ion-col>
+                                  </ion-row>
+                          
+            </ion-grid>
+    </ion-card-content>
+</ion-card>
+
 </ion-content>
