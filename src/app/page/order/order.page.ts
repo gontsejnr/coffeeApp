@@ -13,8 +13,6 @@ export class OrderPage implements OnInit {
   addOn: string [] = ['Milk', 'Cream', 'Chocolate', 'Honey']
   aPrice: number [] = [11, 8, 9, 9]
 
-  imageArray: any = [];
-
   payment: number = 0;
   paymentE: number = 0;
   total: number = this.payment + this.paymentE;
@@ -22,18 +20,6 @@ export class OrderPage implements OnInit {
 
   constructor(public router: Router) {
 
-    // this.payment = this.payment + this.prices[0];
-
-    this.imageArray = [{'image': '../../assets/photos/rooibos.jpeg'},
-                        {'image': '../../assets/photos/rooibosMilk.jpeg'},
-                        {'image': '../../assets/photos/chai.jpeg'},
-                        {'image': '../../assets/photos/espresso.jpeg'},
-                        {'image': '../../assets/photos/seriousRedCappuccino.jpeg'},
-                        {'image': '../../assets/photos/redLatte.jpeg'},
-                        {'image': '../../assets/photos/decadent.jpeg'},
-                        {'image': '../../assets/photos/caffeMocha.jpeg'},
-                        {'image': '../../assets/photos/caribbean.jpeg'}
-  ]
    }
 
   ngOnInit() {
@@ -44,6 +30,62 @@ export class OrderPage implements OnInit {
 
          this.total =  this.payment + this.paymentE;
     }
+    if(this.radioB == this.coffeeType[1]){
+      console.log(this.prices[1]);
+
+         this.payment = this.payment + this.prices[1];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[2]){
+      console.log(this.prices[2]);
+
+         this.payment = this.payment + this.prices[2];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[3]){
+      console.log(this.prices[3]);
+
+         this.payment = this.payment + this.prices[3];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[4]){
+      console.log(this.prices[4]);
+
+         this.payment = this.payment + this.prices[4];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[5]){
+      console.log(this.prices[5]);
+
+         this.payment = this.payment + this.prices[5];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[6]){
+      console.log(this.prices[6]);
+
+         this.payment = this.payment + this.prices[6];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[7]){
+      console.log(this.prices[7]);
+
+         this.payment = this.payment + this.prices[7];
+
+         this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.coffeeType[8]){
+      console.log(this.prices[8]);
+
+         this.payment = this.payment + this.prices[8];
+
+         this.total =  this.payment + this.paymentE;
+    }
   }
 
   extra(){
@@ -51,6 +93,27 @@ export class OrderPage implements OnInit {
       console.log(this.aPrice[0]);
 
       this.paymentE = this.paymentE + this.aPrice[0];
+
+      this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.addOn[1]){
+      console.log(this.aPrice[1]);
+
+      this.paymentE = this.paymentE + this.aPrice[1];
+
+      this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.addOn[2]){
+      console.log(this.aPrice[2]);
+
+      this.paymentE = this.paymentE + this.aPrice[2];
+
+      this.total =  this.payment + this.paymentE;
+    }
+    if(this.radioB == this.addOn[3]){
+      console.log(this.aPrice[3]);
+
+      this.paymentE = this.paymentE + this.aPrice[3];
 
       this.total =  this.payment + this.paymentE;
     }

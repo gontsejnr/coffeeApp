@@ -1,63 +1,63 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>order</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>order</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<!-- <p>{{coffeeType[0]}}</p>
+    <!-- <p>{{coffeeType[0]}}</p>
 <br>
 <p>R{{prices[0]}}</p> -->
 
-<ion-list>
-  <ion-radio-group [(ngModel)]="radioB">
-    <ion-list-header>
-      <ion-label>Hot Berv</ion-label>
-    </ion-list-header>
+    <ion-list>
+        <ion-radio-group [(ngModel)]="radioB">
+            <ion-list-header>
+                <ion-label>Hot Berv</ion-label>
+            </ion-list-header>
 
-    <ion-item>
-      <ion-label> {{coffeeType[0]}}</ion-label>
-      <ion-radio slot="start" value="{{coffeeType[0]}}" (click)="ngOnInit()" ></ion-radio>
-    </ion-item>
+            <ion-item>
+                <ion-label> {{coffeeType[0]}}</ion-label>
+                <ion-radio slot="start" value="{{coffeeType[0]}}" (click)="ngOnInit()"></ion-radio>
+            </ion-item>
 
-    <ion-item>
-      <ion-label>{{coffeeType[1]}}</ion-label>
-      <ion-radio slot="start" value="{{coffeeType[1]}}"></ion-radio>
-    </ion-item>
+            <ion-item>
+                <ion-label>{{coffeeType[1]}}</ion-label>
+                <ion-radio slot="start" value="{{coffeeType[1]}}" (click)="ngOnInit()"></ion-radio>
+            </ion-item>
 
-    <ion-item>
-      <ion-label>{{coffeeType[2]}}</ion-label>
-      <ion-radio slot="start" value="{{coffeeType[2]}}"></ion-radio>
-    </ion-item>
-  </ion-radio-group>
-</ion-list>
+            <ion-item>
+                <ion-label>{{coffeeType[2]}}</ion-label>
+                <ion-radio slot="start" value="{{coffeeType[2]}}" (click)="ngOnInit()"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
 
-<br>
+    <br>
 
-<ion-list>
-  <ion-radio-group [(ngModel)]="radioB">
-    <ion-list-header>
-      <ion-label>Extra AddOn</ion-label>
-    </ion-list-header>
+    <ion-list>
+        <ion-radio-group [(ngModel)]="radioB">
+            <ion-list-header>
+                <ion-label>Extra AddOn</ion-label>
+            </ion-list-header>
 
-    <ion-item>
-      <ion-label>{{addOn[0]}}</ion-label>
-      <ion-radio slot="start" value="{{addOn[0]}}" (click)="extra()" ></ion-radio>
-    </ion-item>
+            <ion-item>
+                <ion-label>{{addOn[0]}}</ion-label>
+                <ion-radio slot="start" value="{{addOn[0]}}" (click)="extra()"></ion-radio>
+            </ion-item>
 
-    <ion-item>
-      <ion-label>{{addOn[1]}}</ion-label>
-      <ion-radio slot="start" value="{{addOn[1]}}"></ion-radio>
-    </ion-item>
+            <ion-item>
+                <ion-label>{{addOn[1]}}</ion-label>
+                <ion-radio slot="start" value="{{addOn[1]}}" (click)="extra()"></ion-radio>
+            </ion-item>
 
-    <ion-item>
-      <ion-label>{{addOn[2]}}</ion-label>
-      <ion-radio slot="start" value="{{addOn[2]}}"></ion-radio>
-    </ion-item>
-  </ion-radio-group>
-</ion-list>
+            <ion-item>
+                <ion-label>{{addOn[2]}}</ion-label>
+                <ion-radio slot="start" value="{{addOn[2]}}" (click)="extra()"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
 
 
-<p>Payment: R{{payment}} + R{{paymentE}}</p><br>
-<p>Total Cost: R{{total}}</p>
+    <p>Payment: R{{payment}} + R{{paymentE}}</p><br>
+    <p>Total Cost: R{{total}}</p>
 </ion-content>
