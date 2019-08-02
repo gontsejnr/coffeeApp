@@ -5,7 +5,6 @@ const routes: Routes = [
   { path: '', redirectTo: 'order', pathMatch: 'full' },
   { path: 'order', loadChildren: './page/order/order.module#OrderPageModule' },
   { path: 'confirm', loadChildren: './page/confirm/confirm.module#ConfirmPageModule' },
-  { path: 'payment', loadChildren: './page/payment/payment.module#PaymentPageModule' },
   { path: 'coffee', loadChildren: './page/coffee/coffee.module#CoffeePageModule' },
 ];
 
