@@ -1,9 +1,213 @@
 <ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>CONFIRM</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="dark">
+        <ion-title>
+            <h1>Total: R{{finalAmount}}.00</h1>
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-card color="dark">
+        <ion-card-content>
+
+            <ion-grid color="dark">
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[0]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/620x634/_files/Beverages/brewed_coffee.jpg"></h3>
+                            <ion-label>
+
+                            </ion-label>
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus1() " name="remove "></ion-icon>
+                                <h4>{{bCoffee}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add1() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{p_Bcoffee}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus1Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add1Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus1Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add1Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[1]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/240x240/_files/Beverages/SBX20080807_3256_1.jpg"></h3>
+
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus2() " name="remove "></ion-icon>
+                                <h4>{{cappu}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add2() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{totalCappu}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus2Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add2Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus2Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add2Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[2]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/green_tea_latte.jpg"></h3>
+
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus3() " name="remove "></ion-icon>
+                                <h4>{{greenTea}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add3() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{totalGreenTea}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus3Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add3Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus3Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add3Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[3]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/espresso_shot.jpg"></h3>
+
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus4() " name="remove "></ion-icon>
+                                <h4>{{espresso}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add4() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{totalEspresso}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus4Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add4Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus4Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add4Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[4]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/white_hot_chocolate.jpg"></h3>
+
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus5() " name="remove "></ion-icon>
+                                <h4>{{hChocolate}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add5() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{totalHchocolate}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus5Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add5Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus5Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add5Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                    <ion-col>
+                        <div>
+                            <h3>{{coffeeType[5]}}
+                                <img src="https://assets.mystarbucks.com.au/imagecache/bestfit/288x288/_files/Beverages/chat_tea_latte.jpg"></h3>
+
+                            <ion-item>
+                                <ion-icon style="zoom:1.2; " (click)="minus6() " name="remove "></ion-icon>
+                                <h4>{{chaiTea}}</h4>
+                                <ion-icon style="zoom:1.2; " (click)="add6() " name="add "></ion-icon>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                <h4 text-right>R {{totalChaiTea}}.00</h4>
+                            </ion-item>
+                            <p><b>Add: </b></p>
+
+                            <ion-item>
+                                <ion-label>Cream</ion-label>
+                                <ion-icon style="zoom:0.5; " (click)="minus6Cream() " name="remove "></ion-icon>
+                                <h6>{{cream}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add6Cream() " name="add "></ion-icon>
+                            </ion-item>
+                            <ion-item>
+                                <ion-label>Milk</ion-label>
+
+                                <ion-icon style="zoom:0.5; " (click)="minus6Chocolate() " name="remove "></ion-icon>
+                                <h6>{{milk}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add6Chocolate() " name="add "></ion-icon>
+                            </ion-item>
+                        </div>
+                    </ion-col>
+                </ion-row>
+
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+    <ion-button expand="full" color="dark" (click)="Pay()">Proceed</ion-button>
 
 </ion-content>
