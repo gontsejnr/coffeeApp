@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar color="dark">
         <ion-title>
-            <h1>Total: R{{finalAmount}}.00</h1>
+            <h1>Total: R{{payAmount}}.00</h1>
         </ion-title>
     </ion-toolbar>
 </ion-header>
@@ -25,7 +25,7 @@
                                 <ion-icon style="zoom:1.2; " (click)="add1() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{p_Bcoffee}}.00</h4>
+                                <h4 text-right>R {{exBcoffee}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
@@ -33,15 +33,15 @@
                                 <ion-label>Cream</ion-label>
 
                                 <ion-icon style="zoom:0.5; " (click)="minus1Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream1}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add1Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus1Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add1Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus1Milk() " name="remove "></ion-icon>
+                                <h6>{{milk1}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add1Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>
@@ -56,7 +56,7 @@
                                 <ion-icon style="zoom:1.2; " (click)="add2() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{totalCappu}}.00</h4>
+                                <h4 text-right>R {{exCappu}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
@@ -64,15 +64,15 @@
                                 <ion-label>Cream</ion-label>
 
                                 <ion-icon style="zoom:0.5; " (click)="minus2Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream2}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add2Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus2Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add2Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus2Milk() " name="remove "></ion-icon>
+                                <h6>{{milk2}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add2Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>
@@ -89,7 +89,7 @@
                                 <ion-icon style="zoom:1.2; " (click)="add3() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{totalGreenTea}}.00</h4>
+                                <h4 text-right>R {{exGreenTea}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
@@ -97,15 +97,15 @@
                                 <ion-label>Cream</ion-label>
 
                                 <ion-icon style="zoom:0.5; " (click)="minus3Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream3}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add3Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus3Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add3Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus3Milk() " name="remove "></ion-icon>
+                                <h6>{{milk3}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add3Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>
@@ -120,7 +120,7 @@
                                 <ion-icon style="zoom:1.2; " (click)="add4() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{totalEspresso}}.00</h4>
+                                <h4 text-right>R {{exEspresso}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
@@ -128,15 +128,15 @@
                                 <ion-label>Cream</ion-label>
 
                                 <ion-icon style="zoom:0.5; " (click)="minus4Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream4}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add4Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus4Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add4Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus4Milk() " name="remove "></ion-icon>
+                                <h6>{{milk4}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add4Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>
@@ -153,7 +153,7 @@
                                 <ion-icon style="zoom:1.2; " (click)="add5() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{totalHchocolate}}.00</h4>
+                                <h4 text-right>R {{exHchocolate}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
@@ -161,15 +161,15 @@
                                 <ion-label>Cream</ion-label>
 
                                 <ion-icon style="zoom:0.5; " (click)="minus5Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream5}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add5Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus5Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add5Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus5Milk() " name="remove "></ion-icon>
+                                <h6>{{milk5}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add5Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>
@@ -184,22 +184,22 @@
                                 <ion-icon style="zoom:1.2; " (click)="add6() " name="add "></ion-icon>
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                                <h4 text-right>R {{totalChaiTea}}.00</h4>
+                                <h4 text-right>R {{exChaiTea}}.00</h4>
                             </ion-item>
                             <p><b>Add: </b></p>
 
                             <ion-item>
                                 <ion-label>Cream</ion-label>
                                 <ion-icon style="zoom:0.5; " (click)="minus6Cream() " name="remove "></ion-icon>
-                                <h6>{{cream}}</h6>
+                                <h6>{{cream6}}</h6>
                                 <ion-icon style="zoom:0.5; " (click)="add6Cream() " name="add "></ion-icon>
                             </ion-item>
                             <ion-item>
                                 <ion-label>Milk</ion-label>
 
-                                <ion-icon style="zoom:0.5; " (click)="minus6Chocolate() " name="remove "></ion-icon>
-                                <h6>{{milk}}</h6>
-                                <ion-icon style="zoom:0.5; " (click)="add6Chocolate() " name="add "></ion-icon>
+                                <ion-icon style="zoom:0.5; " (click)="minus6Milk() " name="remove "></ion-icon>
+                                <h6>{{milk6}}</h6>
+                                <ion-icon style="zoom:0.5; " (click)="add6Milk() " name="add "></ion-icon>
                             </ion-item>
                         </div>
                     </ion-col>

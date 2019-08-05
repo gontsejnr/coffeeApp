@@ -5,7 +5,8 @@ const routes: Routes = [
   { path: '', redirectTo: 'order', pathMatch: 'full' },
   { path: 'order', loadChildren: './page/order/order.module#OrderPageModule' },
   { path: 'confirm', loadChildren: './page/confirm/confirm.module#ConfirmPageModule' },
-  { path: 'coffee', loadChildren: './page/coffee/coffee.module#CoffeePageModule' },
+  { path: 'coffee', loadChildren: './page/coffee/coffee.module#CoffeePageModule' },  { path: 'payment', loadChildren: './page/payment/payment.module#PaymentPageModule' },
+
 ];
 
 @NgModule({
