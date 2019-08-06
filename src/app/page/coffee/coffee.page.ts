@@ -31,7 +31,7 @@ export class CoffeePage implements OnInit {
   ngOnInit() {
   }
  order(){
-   this.router.navigateByUrl('order');
+   this.router.navigateByUrl('confirm');
  }
 
 }
