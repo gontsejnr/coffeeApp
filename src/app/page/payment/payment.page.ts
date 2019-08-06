@@ -53,5 +53,9 @@ export class PaymentPage implements OnInit {
    
   }
 
+  pay(){
+     window.print();
+  }
+
 
 }

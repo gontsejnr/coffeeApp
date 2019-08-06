@@ -35,10 +35,6 @@ totalEspresso:number = 0;
 totalHchocolate:number = 0;
 totalChaiTea:number = 0;
 
-//addOn
-cream:number = 0;
-milk:number = 0;
-
 exBcoffee:number = 0;
 exCappu:number = 0;
 exGreenTea:number = 0;
@@ -57,6 +53,9 @@ p_ChaiTea:number  = this.totalChaiTea + this.exChaiTea;
 payAmount:number = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
  + this.p_Espresso + this.p_Hchocolate + this.p_ChaiTea;
 
+ //addOn
+  cream:number = 0;
+  milk:number = 0;
   cream5: number = 0;
   milk5: number = 0;
   milk4: number = 0;
@@ -84,7 +83,7 @@ payAmount:number = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
   minus1(){
 
   console.log(this.bCoffee -= 1)
-  console.log(this.bCoffee -=22)
+  console.log(this.totalBcoffee -=22)
 
   if(this.bCoffee <= 0){
     this.bCoffee = 0;
@@ -149,7 +148,7 @@ this.payAmount = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
   //========================================================================
   minus2(){
     console.log(this.cappu -= 1)
-    console.log(this.cappu -=33)
+    console.log(this.totalCappu -=33)
   
     if(this.cappu <= 0){
       this.cappu = 0;
@@ -461,7 +460,7 @@ this.payAmount = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
 }
   add6Milk(){
     console.log(this.milk5 += 1)
-    console.log(this.exCappu +=5)
+    console.log(this.exChaiTea +=5)
     this.p_ChaiTea = this.totalChaiTea + this.exChaiTea;
     this.payAmount = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
     + this.p_Espresso + this.p_Hchocolate + this.p_ChaiTea; 
@@ -502,7 +501,6 @@ this.payAmount = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
         unitp4:this.unitp4,
         unitp5:this.unitp5,
         unitp6:this.unitp6} });
-      // window.print();
        
     }
 }

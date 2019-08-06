@@ -14,71 +14,66 @@
                   </table>
                   <br>
                   <div class="cc">
-                  <h1>Invoice</h1>
+                  <h2>Payment Receipt</h2>
+                  <br>
                   <table class="subheader-table">
                     <tr>
                       <td width="30%">
                         <dt>Invoice Number:</dt>
-                        <dd>009223-222</dd>
+                        <dd>009223-222</dd>&nbsp;
                       </td>
                       <td width="40%">
                         <dt>Invoice Total:</dt>
-                        <dd>R {{payAmount}}.00</dd>
+                        <dd>R {{payAmount}}.00</dd>&nbsp;
                       </td>
                     </tr>
                   </table>
-                  <h3>Invoice Details</h3>
+                  <h3>Invoice Details:</h3>
                   <table class="detail-table">
                     <tr>
                       <th width="50%">Description</th>
                       <th width="20%">Amount</th>
-                      <th width="10%">Qty</th>
                      
                     </tr>
                     <tr> 
                       <td>{{paramText1}}</td>
                       <td>{{unitp1}}</td>
-                      <td>1</td>
                     </tr>
                     <tr>
                       <td>{{paramText2}}</td>
                       <td>{{unitp2}}</td>
-                      <td>1</td>
                     </tr>
                     <tr>
                       <td>{{paramText3}}</td>
                       <td>{{unitp3}}</td>
-                      <td>1</td>
                     </tr>
                     <tr>
                         <td>{{paramText4}}</td>
                         <td>{{unitp4}}</td>
-                        <td>1</td>
                       </tr>
                       <tr>
                           <td>{{paramText5}}</td>
                           <td>{{unitp5}}</td>
-                          <td>1</td>
                         </tr>
                         <tr>
                             <td>{{paramText6}}</td>
                             <td>{{unitp6}}</td>
-                            <td>1</td>
                           </tr>
                   </table>
+                  <br>
                   <table class="footer-table">
                     <tr>
-                      <td width="80%">Sub Total: </td>
-                      <td width="20%">$6.000</td>
+                      <td width="70%">Sub Total: </td>
+                      <td width="30%">R {{payAmount}}.00</td>
                     </tr>
-                    <tr>
-                      <td>Tax: </td>
-                      <td>$600</td>
-                    </tr>
+                    
                   </table>
                 </div>
               </div>
               </div>
+                            
         </ion-card-content>
       </ion-card>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <ion-button expand="full" color="dark"  (click)="pay()">Pay</ion-button>
 </ion-content>
