@@ -122,4 +122,8 @@ export class OrderPage implements OnInit {
  Pic(){
    this.router.navigateByUrl('confirm');
  }
+
+ back(){
+  this.router.navigateByUrl('coffee')
+}
 }

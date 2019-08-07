@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment',
@@ -24,7 +24,7 @@ export class PaymentPage implements OnInit {
 
   payAmount;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params=>{
@@ -57,5 +57,7 @@ export class PaymentPage implements OnInit {
      window.print();
   }
 
-
+  back(){
+    this.router.navigateByUrl('confirm')
+  }
 }

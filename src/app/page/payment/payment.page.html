@@ -1,6 +1,11 @@
 
-<ion-content >
+<ion-header>
+    <ion-toolbar color="dark"><ion-icon size="large" name="arrow-round-back" (click)="back()"></ion-icon>
+        <ion-title></ion-title>
+    </ion-toolbar>
+</ion-header>
 
+<ion-content >
     <ion-card color="dark">
         <ion-card-content>
           <br>
@@ -75,6 +80,6 @@
                             
         </ion-card-content>
       </ion-card>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
       <ion-button expand="full" color="dark"  (click)="pay()">Payment Receipt</ion-button>
 </ion-content>

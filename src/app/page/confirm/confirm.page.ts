@@ -503,4 +503,7 @@ this.payAmount = this.p_Bcoffee + this.p_Cappu + this.p_GreenTea
         unitp6:this.unitp6} });
        
     }
+    back(){
+      this.router.navigateByUrl('order')
+    }
 }
